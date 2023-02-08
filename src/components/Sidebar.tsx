@@ -1,4 +1,3 @@
-import React from 'react';
 import { IonIcon } from '@ionic/react';
 import { categories } from '../constants/categories';
 import { useGlobalContext } from '../context';

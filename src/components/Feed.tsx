@@ -1,4 +1,3 @@
-import React from 'react';
 import { useGlobalContext } from '../context';
 import Sidebar from './Sidebar';
 import Videos from './Videos';

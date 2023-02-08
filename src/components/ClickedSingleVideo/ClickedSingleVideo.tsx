@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import fetchClickedVideo from '../../helpers/fetchClickedVideo';
@@ -26,7 +25,7 @@ const ClickedSingleVideo = () => {
   if (isLoading) return <h1>Loading...</h1>;
 
   const {
-    snippet: { title, channelId },
+    snippet: { title },
     statistics: { viewCount, likeCount },
   } = data as clickedVideoType;
 

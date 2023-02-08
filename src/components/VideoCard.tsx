@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { snippetType } from '../constants/types';
 import formatDate from '../helpers/formatDates';
@@ -22,7 +21,15 @@ const VideoCard = (props: videoCardProps) => {
     >
       <div className="video-card ">
         <header className="video-card-header">
-          <img className="video-img" alt={title} src={thumbnails?.high?.url} />
+          <img
+            className="video-img"
+            alt={title}
+            src={
+              thumbnails?.high?.url
+                ? thumbnails.high.url
+                : 'https://as2.ftcdn.net/v2/jpg/02/15/84/43/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg'
+            }
+          />
         </header>
 
         <div className="video-description">
