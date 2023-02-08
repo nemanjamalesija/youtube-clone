@@ -5,7 +5,7 @@ import { useGlobalContext } from '../context';
 import './sidebar.css';
 
 const Sidebar = () => {
-  const { searchTerm, activeCategory } = useGlobalContext();
+  const { activeCategory } = useGlobalContext();
 
   return (
     <aside>

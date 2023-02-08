@@ -1,6 +1,7 @@
 import React from 'react';
 import { useGlobalContext } from '../context';
 import Sidebar from './Sidebar';
+import Videos from './Videos';
 
 const Feed = () => {
   const { searchTerm } = useGlobalContext();
@@ -11,6 +12,7 @@ const Feed = () => {
         {searchTerm ? searchTerm : 'New'} <span>videos</span>
       </h1>
       <Sidebar />
+      <Videos />
     </main>
   );
 };

@@ -1,13 +1,50 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+}
+
+.app-main {
+  height: 100vh;
+  padding: 1.8rem 1.4rem 1.8rem 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 2rem;
+  padding-right: 6.2rem;
+}
+
+.main-heading {
+  grid-column: 2;
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-heading span {
+  color: #ff0000;
+}
+
+.fetched-videos-div {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.video-card,
+.channel-card {
+  width: 100%;
+  background-color: #1a1a1a;
+  cursor: pointer;
 }

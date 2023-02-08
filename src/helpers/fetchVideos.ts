@@ -11,7 +11,7 @@ const fetchVideos = async (searchValue: string) => {
       regionCode: 'US',
     },
     headers: {
-      'X-RapidAPI-Key': 'ca15920c56mshf9c581b5644b811p131238jsnb4402ca00e5c',
+      'X-RapidAPI-Key': '66a34855d0msh8fbad31230099d6p189650jsn9c0a63e7f75f',
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
     },
   };
