@@ -11,6 +11,7 @@ import {
   downloadOutline,
 } from 'ionicons/icons';
 import { clickedVideoType } from '../constants/types';
+import './clickedSingleVideo.css';
 
 const ClickedSingleVideo = () => {
   const id = useParams();

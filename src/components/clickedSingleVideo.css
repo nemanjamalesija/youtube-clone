@@ -1,0 +1,70 @@
+.clicked-video-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 2rem;
+  width: 140rem;
+  margin: 0 auto;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+  margin-bottom: 1.6rem;
+}
+
+/*  video stats*/
+.stats-heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.video-stats {
+  margin-bottom: 3.2rem;
+}
+
+.stat-info {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.views-video {
+  font-size: 1.8rem;
+}
+
+.right-side-video {
+  display: flex;
+}
+
+.info-block-video {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-block-info-video {
+  display: flex;
+  font-size: 2rem;
+}
+
+.info-margin-left {
+  margin-left: 2rem;
+}
+
+.btn-block-info-video {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.icon-stats {
+  font-size: 2rem;
+}
+
+.paragraph-stats {
+  font-size: 1.8rem;
+}
