@@ -1,0 +1,25 @@
+.channel-card {
+  width: 100%;
+}
+
+.card-channel {
+  background-color: #000;
+}
+
+.channel-img {
+  clip-path: circle();
+  margin-top: 3rem;
+}
+
+.channel-title {
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.75px;
+}
+
+.channel-description {
+  color: #e6e6e6;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
