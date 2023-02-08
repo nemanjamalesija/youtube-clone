@@ -1,0 +1,44 @@
+.comment-container {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.comment-image {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+.comment-author-info {
+  display: flex;
+  color: #fff;
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-author-comment {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.comment-likes-info {
+  display: flex;
+  color: #fff;
+  gap: 1rem;
+}
+
+.comment-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.like-count {
+  font-size: 1.6rem;
+}
+
+.clicked-channel p {
+  color: #fff;
+}

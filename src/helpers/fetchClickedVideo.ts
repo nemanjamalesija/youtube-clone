@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { clickedVideoType, queryKey } from '../constants/types';
+import { clickedVideoType, queryKeysType } from '../constants/types';
 
 const fetchClickedVideo = async ({
   queryKey,
-}: queryKey): Promise<clickedVideoType> => {
+}: queryKeysType): Promise<clickedVideoType> => {
   const idVideo = queryKey[1];
 
   const options = {

@@ -26,7 +26,7 @@ export type appStateType = {
   setAppState: (value: React.SetStateAction<appStateType>) => void;
 };
 
-export type queryKey = { queryKey: [string, string] };
+export type queryKeysType = { queryKey: [string, string] };
 
 export type clickedVideoType = {
   snippet: {
@@ -37,5 +37,19 @@ export type clickedVideoType = {
   statistics: {
     viewCount: string;
     likeCount: string;
+  };
+};
+
+export type videoComments = {
+  snippet: {
+    topLevelComment: {
+      snippet: {
+        authorDisplayName: string;
+        authorProfileImageUrl: string;
+        likeCount: number;
+        publishedAt: string;
+        textDisplay: string;
+      };
+    };
   };
 };

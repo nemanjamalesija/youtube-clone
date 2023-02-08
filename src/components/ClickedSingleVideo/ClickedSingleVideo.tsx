@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
-import fetchClickedVideo from '../helpers/fetchClickedVideo';
+import fetchClickedVideo from '../../helpers/fetchClickedVideo';
 import { useQuery } from '@tanstack/react-query';
 import { IonIcon } from '@ionic/react';
 import {
@@ -10,8 +10,9 @@ import {
   arrowRedoOutline,
   downloadOutline,
 } from 'ionicons/icons';
-import { clickedVideoType } from '../constants/types';
+import { clickedVideoType } from '../../constants/types';
 import './clickedSingleVideo.css';
+import VideoComents from './VideoComments';
 
 const ClickedSingleVideo = () => {
   const id = useParams();
@@ -34,7 +35,9 @@ const ClickedSingleVideo = () => {
       <div className="clicked-video-main">
         <div className="clicked-video-player-comments">
           <ReactPlayer
-            url={`https://www.youtube.com/watch?v=${videoId}`}
+            url={`https://www.youtube.com/watch?v=${
+              videoId ? videoId : 'dQw4w9WgXcQ'
+            }`}
             className="react-player"
             controls
           />
@@ -73,7 +76,7 @@ const ClickedSingleVideo = () => {
             </div>
           </div>
         </div>
-        <div>Add video coments</div>
+        <VideoComents videoId={videoId ? videoId : 'dQw4w9WgXcQ'} />
       </div>
       <div>Add channel videos</div>
     </div>
