@@ -15,6 +15,20 @@ body {
   background-color: #000;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.link-videocard {
+  color: #3d3d3d;
+}
+/* cchannel card */
+.formated-date {
+  font-size: 1.4rem;
+  color: #e6e6e6;
+}
+
 .app-main {
   height: 100vh;
   padding: 1.8rem 1.4rem 1.8rem 1.6rem;
