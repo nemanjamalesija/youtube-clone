@@ -26,3 +26,5 @@ export type appStateType = {
   videos: videosType[];
   setAppState: (value: React.SetStateAction<appStateType>) => void;
 };
+
+export type queryKey = { queryKey: [string, string] };

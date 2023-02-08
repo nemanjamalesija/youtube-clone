@@ -15,9 +15,6 @@ const VideoCard = (props: videoCardProps) => {
 
   const { thumbnails, title, channelTitle, publishTime } = snippet;
 
-  const toTimestamp = (strDate: string) => Date.parse(strDate);
-  console.log(toTimestamp(publishTime));
-
   return (
     <Link
       to={videoId ? `/video/${videoId}` : `/video/dQw4w9WgXcQ`}
