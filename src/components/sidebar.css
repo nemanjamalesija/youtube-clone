@@ -3,7 +3,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  min-width: 20rem;
+  min-width: 17.5rem;
 }
 
 .category-sidebar {

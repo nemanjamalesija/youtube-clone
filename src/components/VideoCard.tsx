@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { snippetType } from '../constants/types';
+import formatDate from '../helpers/formatDates';
+
 import './videoCard.css';
 
 type videoCardProps = {
@@ -11,8 +13,10 @@ type videoCardProps = {
 const VideoCard = (props: videoCardProps) => {
   const { snippet, videoId } = props;
 
-  const { thumbnails, title, channelTitle } = snippet;
-  //// publishTime  implement format date
+  const { thumbnails, title, channelTitle, publishTime } = snippet;
+
+  const toTimestamp = (strDate: string) => Date.parse(strDate);
+  console.log(toTimestamp(publishTime));
 
   return (
     <Link
@@ -25,12 +29,12 @@ const VideoCard = (props: videoCardProps) => {
         </header>
 
         <div className="video-description">
-          <h5>{title.slice(0, 60)}</h5>
+          <h5 className="heading-fifth">{title.slice(0, 60)}</h5>
           <p
             className="video-chanel-name"
             dangerouslySetInnerHTML={{ __html: channelTitle }}
           ></p>
-          <span className="formated-date ">FORMAT DATE HERE</span>
+          <span className="formated-date ">{formatDate(publishTime)}</span>
         </div>
       </div>
     </Link>

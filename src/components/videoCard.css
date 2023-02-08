@@ -16,8 +16,8 @@
   padding: 1rem;
 }
 
-h5 {
-  font-size: 1.4rem;
+.heading-fifth {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   font-weight: 600;
   color: #fff;
@@ -27,8 +27,12 @@ h5 {
 .comment-author {
   color: #aaaaaa;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.5px;
+}
+
+.formated-date {
+  font-size: 1.2rem;
 }
 
 .video-chanel-name {
