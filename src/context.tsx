@@ -11,12 +11,11 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [appState, setAppState] = useState(initialState);
 
   useEffect(() => {
-    fetchVideos(
-      `${appState.searchTerm ? appState.searchTerm : 'mr beast'}`
-    ).then((res) =>
-      setAppState((prev) => {
-        return { ...prev, videos: res.items };
-      })
+    fetchVideos(`${appState.searchTerm ? appState.searchTerm : 'new'}`).then(
+      (res) =>
+        setAppState((prev) => {
+          return { ...prev, videos: res.items };
+        })
     );
   }, [appState.searchTerm]);
 
@@ -24,6 +23,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
     <AppContext.Provider
       value={{
         ...appState,
+        setAppState,
       }}
     >
       {children}

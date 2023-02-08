@@ -24,4 +24,5 @@ export type appStateType = {
   searchTermDummy: string;
   activeCategory: string;
   videos: videosType[];
+  setAppState: (value: React.SetStateAction<appStateType>) => void;
 };
