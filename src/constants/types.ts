@@ -2,7 +2,6 @@ export type snippetType = {
   channelId: string;
   channelTitle: string;
   description: string;
-  liveBrodcastContent: string;
   publishTime: string;
   publishedAt: string;
   thumbnails: {
@@ -28,3 +27,15 @@ export type appStateType = {
 };
 
 export type queryKey = { queryKey: [string, string] };
+
+export type clickedVideoType = {
+  snippet: {
+    title: string;
+    channelId: string;
+  };
+
+  statistics: {
+    viewCount: string;
+    likeCount: string;
+  };
+};

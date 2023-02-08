@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import fetchClickedVideo from '../helpers/fetchClickedVideo';
 import { useQuery } from '@tanstack/react-query';
-
 import { IonIcon } from '@ionic/react';
 import {
   thumbsUpOutline,
@@ -11,6 +10,7 @@ import {
   arrowRedoOutline,
   downloadOutline,
 } from 'ionicons/icons';
+import { clickedVideoType } from '../constants/types';
 
 const ClickedSingleVideo = () => {
   const id = useParams();
@@ -23,13 +23,10 @@ const ClickedSingleVideo = () => {
 
   if (isLoading) return <h1>Loading...</h1>;
 
-  const { items } = data;
-  console.log(items);
-
   const {
     snippet: { title, channelId },
     statistics: { viewCount, likeCount },
-  } = items?.[0];
+  } = data as clickedVideoType;
 
   return (
     <div className="clicked-video-container">

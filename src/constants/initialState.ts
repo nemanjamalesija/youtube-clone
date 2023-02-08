@@ -1,5 +1,4 @@
 import React from 'react';
-import { Dispatch } from 'react';
 import { appStateType } from './types';
 
 export const initialState: appStateType = {
@@ -14,7 +13,6 @@ export const initialState: appStateType = {
         channelId: '',
         channelTitle: '',
         description: '',
-        liveBrodcastContent: '',
         publishTime: '',
         publishedAt: '',
         thumbnails: {

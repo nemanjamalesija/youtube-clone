@@ -1,7 +1,9 @@
 import axios from 'axios';
-import { queryKey } from '../constants/types';
+import { clickedVideoType, queryKey } from '../constants/types';
 
-const fetchClickedVideo = async ({ queryKey }: queryKey): Promise<any> => {
+const fetchClickedVideo = async ({
+  queryKey,
+}: queryKey): Promise<clickedVideoType> => {
   const idVideo = queryKey[1];
 
   const options = {
@@ -16,7 +18,7 @@ const fetchClickedVideo = async ({ queryKey }: queryKey): Promise<any> => {
 
   return await axios
     .request(options)
-    .then((response) => response.data)
+    .then((response) => response.data.items?.[0])
     .catch((error) => console.log(error));
 };
 
