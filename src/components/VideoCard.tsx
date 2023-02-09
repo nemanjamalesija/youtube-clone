@@ -30,7 +30,9 @@ const VideoCard = ({ videoId, snippet }: videoCardProps) => {
         </header>
 
         <div className="video-description">
-          <h5 className="heading-fifth">{title.slice(0, 60)}...</h5>
+          <h5 className="heading-fifth">
+            {title.length > 55 ? title.slice(0, 55) + '...' : title}
+          </h5>
           <p
             className="video-chanel-name"
             dangerouslySetInnerHTML={{ __html: channelTitle }}

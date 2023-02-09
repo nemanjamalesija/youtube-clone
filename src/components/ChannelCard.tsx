@@ -30,7 +30,11 @@ const ChannelCard = (props: channelCard) => {
         </header>
         <div className="video-description">
           <h5 className="channel-title">{title}</h5>
-          <p className="channel-description">{description.slice(0, 85)}...</p>
+          <p className="channel-description">
+            {description.length > 85
+              ? description.slice(0, 85) + '...'
+              : description}
+          </p>
         </div>
       </div>
     </Link>
