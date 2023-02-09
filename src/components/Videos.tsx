@@ -1,4 +1,3 @@
-import React from 'react';
 import { useGlobalContext } from '../context';
 import VideoCard from './VideoCard';
 import ChannelCard from './ChannelCard';

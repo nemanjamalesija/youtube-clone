@@ -58,3 +58,10 @@ export type videoComments = {
     };
   };
 };
+
+export type channelDetailsType = {
+  brandingSettings: {
+    channel: { title: string; description: string };
+    image: { bannerExternalUrl: string };
+  };
+};

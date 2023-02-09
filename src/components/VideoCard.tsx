@@ -8,9 +8,7 @@ type videoCardProps = {
   snippet: snippetType;
 };
 
-const VideoCard = (props: videoCardProps) => {
-  const { snippet, videoId } = props;
-
+const VideoCard = ({ videoId, snippet }: videoCardProps) => {
   const { thumbnails, title, channelTitle, publishTime } = snippet;
 
   return (

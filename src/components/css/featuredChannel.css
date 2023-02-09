@@ -1,0 +1,53 @@
+.heading-secondary {
+  font-size: 2.8rem;
+  color: #ff0000;
+  align-self: start;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.heading-secondary span {
+  color: #fff;
+}
+
+.featured-channel-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 130rem;
+  margin: 3.2rem auto 0 auto;
+}
+
+.featured-channel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.featured-image {
+  width: 30%;
+  clip-path: circle();
+  margin-bottom: 1.2em;
+}
+
+.featured-heading {
+  font-size: 3.2rem;
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+
+.featured-description {
+  font-size: 1.8rem;
+  color: #e6e6e6;
+  line-height: 1.5;
+  margin-bottom: 3.6rem;
+  font-weight: 500;
+}
