@@ -12,16 +12,21 @@
 
 .comment-author-info {
   display: flex;
+  align-items: center;
   color: #fff;
   gap: 1rem;
-  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .comment-author-comment {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 0.8rem;
+}
+
+.formated-date-comment {
+  font-size: 1.2rem;
+  color: #e6e6e6;
 }
 
 .comment-likes-info {
@@ -36,7 +41,7 @@
 }
 
 .like-count {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .clicked-channel p {

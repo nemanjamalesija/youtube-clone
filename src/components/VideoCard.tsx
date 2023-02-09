@@ -33,7 +33,7 @@ const VideoCard = (props: videoCardProps) => {
         </header>
 
         <div className="video-description">
-          <h5 className="heading-fifth">{title.slice(0, 60)}</h5>
+          <h5 className="heading-fifth">{title.slice(0, 60)}...</h5>
           <p
             className="video-chanel-name"
             dangerouslySetInnerHTML={{ __html: channelTitle }}

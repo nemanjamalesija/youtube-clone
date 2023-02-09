@@ -9,17 +9,18 @@
 .channel-img {
   clip-path: circle();
   margin-top: 3rem;
+  height: 20rem !important;
 }
 
 .channel-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
   letter-spacing: 0.75px;
 }
 
 .channel-description {
   color: #e6e6e6;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   font-weight: 500;
 }

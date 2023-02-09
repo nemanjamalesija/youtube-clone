@@ -46,7 +46,7 @@ const CommentsClickedVideo = ({ videoId }: videoCommentsProps) => {
             <div className="comment-textual-div">
               <header className="comment-author-info">
                 <h5 className="comment-author">@{authorDisplayName}</h5>
-                <span className="formated-date">{formatDate(publishedAt)}</span>
+                <span className="formated-date-comment">{formatDate(publishedAt)}</span>
               </header>
               <p
                 className="comment-author-comment"
