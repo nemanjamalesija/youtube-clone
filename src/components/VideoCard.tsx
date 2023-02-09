@@ -31,7 +31,7 @@ const VideoCard = ({ videoId, snippet }: videoCardProps) => {
 
         <div className="video-description">
           <h5 className="heading-fifth">
-            {title.length > 55 ? title.slice(0, 55) + '...' : title}
+            {title.length > 50 ? title.slice(0, 50) + '...' : title}
           </h5>
           <p
             className="video-chanel-name"
