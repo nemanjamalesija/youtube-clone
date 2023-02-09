@@ -12,8 +12,8 @@
 
 .video-description,
 .channel-description {
-  height: 12rem;
   padding: 1rem;
+  min-height: 12rem;
 }
 
 .heading-fifth {

@@ -1,6 +1,6 @@
 .clicked-video-container {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 1.5fr;
   gap: 2rem;
   width: 140rem;
   margin: 0 auto;

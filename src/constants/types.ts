@@ -28,6 +28,11 @@ export type appStateType = {
 
 export type queryKeysType = { queryKey: [string, string] };
 
+export type channelVideoType = {
+  id: { videoId: string };
+  snippet: snippetType;
+};
+
 export type clickedVideoType = {
   snippet: {
     title: string;

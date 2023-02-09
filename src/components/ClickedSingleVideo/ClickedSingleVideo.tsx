@@ -11,7 +11,8 @@ import {
 } from 'ionicons/icons';
 import { clickedVideoType } from '../../constants/types';
 import './clickedSingleVideo.css';
-import VideoComents from './VideoComments';
+import CommentsClickedVideo from './CommentsClickedVideo';
+import VideosChannel from './VideosChannel';
 
 const ClickedSingleVideo = () => {
   const id = useParams();
@@ -25,7 +26,7 @@ const ClickedSingleVideo = () => {
   if (isLoading) return <h1>Loading...</h1>;
 
   const {
-    snippet: { title },
+    snippet: { title, channelId },
     statistics: { viewCount, likeCount },
   } = data as clickedVideoType;
 
@@ -75,9 +76,11 @@ const ClickedSingleVideo = () => {
             </div>
           </div>
         </div>
-        <VideoComents videoId={videoId ? videoId : 'dQw4w9WgXcQ'} />
+        <CommentsClickedVideo videoId={videoId ? videoId : 'dQw4w9WgXcQ'} />
       </div>
-      <div>Add channel videos</div>
+      <div>
+        <VideosChannel channelId={channelId} />
+      </div>
     </div>
   );
 };

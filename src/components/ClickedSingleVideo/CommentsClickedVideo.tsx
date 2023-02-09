@@ -7,7 +7,7 @@ import './videoComments.css';
 
 type videoCommentsProps = { videoId: string };
 
-const VideoComents = ({ videoId }: videoCommentsProps) => {
+const CommentsClickedVideo = ({ videoId }: videoCommentsProps) => {
   const { data, isLoading } = useQuery(['coments', videoId], fetchVideoComents);
 
   if (isLoading) return <h1>Loading...</h1>;
@@ -69,4 +69,4 @@ const VideoComents = ({ videoId }: videoCommentsProps) => {
   );
 };
 
-export default VideoComents;
+export default CommentsClickedVideo;

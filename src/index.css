@@ -62,3 +62,12 @@ a.link-videocard {
   background-color: #1a1a1a;
   cursor: pointer;
 }
+
+.channel-videos-container img,
+.channel-videos-container div {
+  border-radius: 0.5rem;
+}
+
+.channel-videos-container div {
+  margin-bottom: 1rem;
+}
