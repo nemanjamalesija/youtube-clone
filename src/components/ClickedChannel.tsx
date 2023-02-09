@@ -3,6 +3,7 @@ import VideosChannel from './VideosChannel';
 import { useQuery } from '@tanstack/react-query';
 import fetchChannelDetails from '../helpers/fetchChannelDetails';
 import FeaturedChannel from './FeaturedChannel';
+import Loading from './Loading';
 import { channelDetailsType } from '../constants/types';
 
 const ClickedChannel = () => {
@@ -12,7 +13,7 @@ const ClickedChannel = () => {
     ['channelDetails', chanelId as string],
     fetchChannelDetails
   );
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <Loading />;
 
   const {
     brandingSettings: {

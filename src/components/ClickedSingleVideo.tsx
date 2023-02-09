@@ -12,6 +12,7 @@ import { clickedVideoType } from '../constants/types';
 import fetchClickedVideo from '../helpers/fetchClickedVideo';
 import CommentsClickedVideo from './CommentsClickedVideo';
 import VideosChannel from './VideosChannel';
+import Loading from "./Loading"
 import './css/clickedSingleVideo.css';
 
 const ClickedSingleVideo = () => {
@@ -23,7 +24,7 @@ const ClickedSingleVideo = () => {
     fetchClickedVideo
   );
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <Loading />
 
   const {
     snippet: { title, channelId },

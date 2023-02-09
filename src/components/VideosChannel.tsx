@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import fetchChanelVideos from '../helpers/fetchChanelVideos';
 import VideoCard from './VideoCard';
+import Loading from './Loading';
 
 type videosChannelProps = {
   channelId: string;
@@ -13,7 +14,7 @@ const VideosChannel = ({ channelId, grid }: videosChannelProps) => {
     fetchChanelVideos
   );
 
-  if (isLoading === true) return <h1>Loading...</h1>;
+  if (isLoading === true) return <Loading />;
 
   return (
     <div

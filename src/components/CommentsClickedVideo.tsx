@@ -3,6 +3,7 @@ import fetchVideoComents from '../helpers/fetchVideoComments';
 import { IonIcon } from '@ionic/react';
 import { thumbsUpOutline } from 'ionicons/icons';
 import formatDate from '../helpers/formatDates';
+import Loading from './Loading';
 import './css/videoComments.css';
 
 type videoCommentsProps = { videoId: string };
@@ -10,7 +11,7 @@ type videoCommentsProps = { videoId: string };
 const CommentsClickedVideo = ({ videoId }: videoCommentsProps) => {
   const { data, isLoading } = useQuery(['coments', videoId], fetchVideoComents);
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <Loading />;
 
   if (!data)
     return (
