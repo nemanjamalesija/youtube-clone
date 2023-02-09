@@ -1,10 +1,25 @@
 import { IonIcon } from '@ionic/react';
+import React from 'react';
 import { categories } from '../constants/categories';
 import { useGlobalContext } from '../context';
 import './css/sidebar.css';
 
 const Sidebar = () => {
-  const { activeCategory } = useGlobalContext();
+  const { activeCategory, setAppState } = useGlobalContext();
+
+  const setCategoryHandler = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    const target = e.target as Element;
+
+    setAppState((prev) => {
+      return {
+        ...prev,
+        activeCategory: target.textContent as string,
+        searchTerm: target.textContent as string,
+      };
+    });
+  };
 
   return (
     <aside>
@@ -19,6 +34,7 @@ const Sidebar = () => {
                 ? 'category-sidebar category-active'
                 : 'category-sidebar'
             }
+            onClick={setCategoryHandler}
           >
             <IonIcon
               className={
