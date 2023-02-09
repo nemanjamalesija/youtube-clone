@@ -11,11 +11,16 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [appState, setAppState] = useState(initialState);
 
   useEffect(() => {
-    fetchVideos(`${appState.searchTerm ? appState.searchTerm : 'new'}`).then(
-      (res) =>
-        setAppState((prev) => {
-          return { ...prev, videos: res.items };
-        })
+    fetchVideos(
+      `${
+        !appState.searchTerm || appState.searchTerm === 'Home'
+          ? 'new'
+          : appState.searchTerm
+      }`
+    ).then((res) =>
+      setAppState((prev) => {
+        return { ...prev, videos: res.items };
+      })
     );
   }, [appState.searchTerm]);
 

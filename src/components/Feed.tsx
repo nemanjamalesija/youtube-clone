@@ -3,12 +3,13 @@ import Sidebar from './Sidebar';
 import Videos from './Videos';
 
 const Feed = () => {
-  const { searchTerm } = useGlobalContext();
+  const { searchTerm, activeCategory } = useGlobalContext();
 
   return (
     <main className="app-main">
       <h1 className="main-heading">
-        {searchTerm ? searchTerm : 'New'} <span>videos</span>
+        {!searchTerm || activeCategory === 'Home' ? 'New' : searchTerm}{' '}
+        <span>videos</span>
       </h1>
       <Sidebar />
       <Videos />
