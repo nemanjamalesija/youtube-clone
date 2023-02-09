@@ -1,16 +1,12 @@
 import { useGlobalContext } from '../context';
+import HeadingFeed from './HeadingFeed';
 import Sidebar from './Sidebar';
 import Videos from './Videos';
 
 const Feed = () => {
-  const { searchTerm, activeCategory } = useGlobalContext();
-
   return (
     <main className="app-main">
-      <h1 className="main-heading">
-        {!searchTerm || activeCategory === 'Home' ? 'New' : searchTerm}{' '}
-        <span>videos</span>
-      </h1>
+      <HeadingFeed />
       <Sidebar />
       <Videos />
     </main>
