@@ -71,3 +71,13 @@ a.link-videocard {
 .channel-videos-container div {
   margin-bottom: 1rem;
 }
+
+.section-error {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.error-paragraph {
+  color: #fff;
+  font-size: 2rem;
+}
