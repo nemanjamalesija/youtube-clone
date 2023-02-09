@@ -31,6 +31,7 @@
 
 .comment-likes-info {
   display: flex;
+  align-items: center;
   color: #fff;
   gap: 1rem;
 }
