@@ -14,7 +14,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
     fetchVideos(
       `${
         !appState.searchTerm || appState.searchTerm === 'Home'
-          ? 'new'
+          ? 'New'
           : appState.searchTerm
       }`
     ).then((res) =>

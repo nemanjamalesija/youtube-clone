@@ -1,4 +1,3 @@
-import { useGlobalContext } from '../context';
 import HeadingFeed from './HeadingFeed';
 import Sidebar from './Sidebar';
 import Videos from './Videos';
