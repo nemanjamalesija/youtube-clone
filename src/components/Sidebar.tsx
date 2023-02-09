@@ -1,7 +1,7 @@
 import { IonIcon } from '@ionic/react';
 import { categories } from '../constants/categories';
 import { useGlobalContext } from '../context';
-import './sidebar.css';
+import './css/sidebar.css';
 
 const Sidebar = () => {
   const { activeCategory } = useGlobalContext();

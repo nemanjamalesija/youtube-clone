@@ -3,7 +3,7 @@ import { SiYoutube } from 'react-icons/si';
 import { useGlobalContext } from '../context';
 import { Link, useNavigate } from 'react-router-dom';
 import fetchVideos from '../helpers/fetchVideos';
-import './nav.css';
+import './css/nav.css';
 
 const Nav = () => {
   const { searchTerm, searchTermDummy, setAppState } = useGlobalContext();

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { snippetType } from '../constants/types';
-import './channelCard.css';
+import './css/channelCard.css';
 
 type channelCard = {
   snippet: snippetType;

@@ -1,5 +1,5 @@
 import ClickedChannel from './ClickedChannel';
-import ClickedSingleVideo from './ClickedSingleVideo/ClickedSingleVideo';
+import ClickedSingleVideo from './ClickedSingleVideo';
 import Feed from './Feed';
 import SharedLayout from './SharedLayout';
 import Error from './Error';

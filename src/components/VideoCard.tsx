@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { snippetType } from '../constants/types';
 import formatDate from '../helpers/formatDates';
-
-import './videoCard.css';
+import './css/videoCard.css';
 
 type videoCardProps = {
   videoId: string;

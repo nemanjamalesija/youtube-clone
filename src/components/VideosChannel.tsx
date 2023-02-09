@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import fetchChanelVideos from '../../helpers/fetchChanelVideos';
-import VideoCard from '../VideoCard';
+import fetchChanelVideos from '../helpers/fetchChanelVideos';
+import VideoCard from './VideoCard';
 
 type videosChannelType = {
   channelId: string;

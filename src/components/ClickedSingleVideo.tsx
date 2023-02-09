@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
-import fetchClickedVideo from '../../helpers/fetchClickedVideo';
 import { useQuery } from '@tanstack/react-query';
 import { IonIcon } from '@ionic/react';
 import {
@@ -9,10 +8,11 @@ import {
   arrowRedoOutline,
   downloadOutline,
 } from 'ionicons/icons';
-import { clickedVideoType } from '../../constants/types';
-import './clickedSingleVideo.css';
+import { clickedVideoType } from '../constants/types';
+import fetchClickedVideo from '../helpers/fetchClickedVideo';
 import CommentsClickedVideo from './CommentsClickedVideo';
 import VideosChannel from './VideosChannel';
+import './css/clickedSingleVideo.css';
 
 const ClickedSingleVideo = () => {
   const id = useParams();

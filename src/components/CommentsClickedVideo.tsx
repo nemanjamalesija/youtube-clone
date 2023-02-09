@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
-import fetchVideoComents from '../../helpers/fetchVideoComments';
+import fetchVideoComents from '../helpers/fetchVideoComments';
 import { IonIcon } from '@ionic/react';
 import { thumbsUpOutline } from 'ionicons/icons';
-import formatDate from '../../helpers/formatDates';
-import './videoComments.css';
+import formatDate from '../helpers/formatDates';
+import './css/videoComments.css';
 
 type videoCommentsProps = { videoId: string };
 
@@ -46,7 +46,9 @@ const CommentsClickedVideo = ({ videoId }: videoCommentsProps) => {
             <div className="comment-textual-div">
               <header className="comment-author-info">
                 <h5 className="comment-author">@{authorDisplayName}</h5>
-                <span className="formated-date-comment">{formatDate(publishedAt)}</span>
+                <span className="formated-date-comment">
+                  {formatDate(publishedAt)}
+                </span>
               </header>
               <p
                 className="comment-author-comment"
